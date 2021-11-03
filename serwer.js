@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 let users = [
     { nick: "111", email: "111@w.pl" },
