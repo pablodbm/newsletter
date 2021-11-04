@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="style/style.css" rel="stylesheet" />
 </head>
+
 <body>
-    <form action="/addUser" method="POST" >
-    <label><p>nick:<input type="text" name="nick" required></p></label>
-    <label><p>email:<input type="email" name="email" required></p></label>
-    <input type="submit" value="Submit">
-    
-</form>
-<a href="/removeUserBySelect">Usuń selectem </a>
-<a href="/removeUserByRadio">Usuń radio butkiem</a>
-<a href="/removeUserByCheckbox ">Usuń checkboxem</a>
+    <p class="header">Zadanie: newsletter</p>
+    <div class="formik">
+        <form action="/addUser" method="POST">
+            <label>
+                <p>nick:<input type="text" name="nick" required /></p>
+            </label>
+            <label>
+                <p>email:<input type="text" name="email" required /></p>
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+    <div class="hrefki">
+    <a href="/removeUserBySelect">Usuń selectem </a>
+    <a href="/removeUserByRadio">Usuń radio butkiem</a>
+    <a href="/removeUserByCheckbox ">Usuń checkboxem</a>
+    </div>
 </body>
+
 </html>
